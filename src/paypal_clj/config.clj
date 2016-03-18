@@ -1,5 +1,7 @@
 (ns paypal-clj.config
-  (:require [cprop.core :refer [load-config cursor]]))
+  (:require [cprop.core :refer [load-config cursor]]
+            [clojure.java.io :as io]
+            [clojure.edn :as edn]))
 
 (def config (load-config))
 
